@@ -1,4 +1,5 @@
 //Load all required modules 
+let express = require("express");
 let app = require("express")();
 let bodyParser = require("body-parser");
 let mongoose = require("mongoose");
@@ -8,7 +9,7 @@ let cors = require("cors");
 //Database URL Details 
 let url = "mongodb://localhost:27017/meanstack";
 
-//unable to load the static file
+//Unable to load the static files 
 app.use(express.static(process.cwd()));
 
 
